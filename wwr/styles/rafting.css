@@ -82,3 +82,7 @@ h1 {
 .socialmedia img {
     width: 32px;
 }
+
+footer {
+    border-top: 3px solid var(--accent2-color);
+}

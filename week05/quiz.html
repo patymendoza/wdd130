@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Quiz Form</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <main>
+        <h1>✅ Basic HTML and CSS Quiz</h1>
+        <form>
+            <div class="quiz-item">
+                <label for="q1"><strong>1.</strong> Which HTML element connects a CSS file to an HTML page?</label>
+                <input type="text" id="q1" name="q1" required>
+            </div>
+            <div class="quiz-item">
+                <label for="q2"><strong>2.</strong> What is the difference between padding and border?</label>
+                <textarea name="q2" id="q2"></textarea>
+            </div>
+            <div class="quiz-item">
+                <label for="q3"><strong>3.</strong> Which CSS property changes the text color?</label>
+                <select id="q3" name="q3">
+                    <option value="" selected disabled>Choose one ...</option>
+                    <option value="text-color">text-color</option>
+                    <option value="color">color</option>
+                    <option value="font-color">font-color</option>
+                </select>
+            </div>
+            <div class="quiz-item">
+                <label for="q4"><strong>4.</strong> How many columns does this declaration create?</label>
+                <pre><code>grid-template-columns: repeat(3, 1fr);</code></pre>
+                <input type="number" id="q4" name="q4">
+            </div>
+            <button type="submit">Submit Quiz</button>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

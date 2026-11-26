@@ -53,7 +53,7 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -131,26 +131,10 @@ header nav a {
     font-size: 3rem;
 }
 
-.history img {
-    width: 100%;
-    height: auto;
-}
-
 .adventures {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
-}
-
-.adventures h2 {
-    grid-column: span 5;
-    text-align: center;
-    font-size: 2rem;
-}
-
-.adventures img {
-    width: 100%;
-    height: auto;
 }
 
 figcaption {
@@ -160,4 +144,87 @@ figcaption {
 .socialmedia {
     display: flex;
     gap: 10px;
+}
+
+.company-info {
+    text-align: center;
+}
+
+.company-info p {
+    margin: 0;
+    padding: 2px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    margin: 16px;
+}
+
+.contact-grid iframe {
+    width: 100%;
+    height: 300px;
+    border: 1px solid var(--accent1-color);
+}
+
+.contact-grid form {
+    display: grid;
+    gap: 8px;
+}
+
+.contact-grid fieldset {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 6px;
+    padding: 8px;
+}
+
+.contact-grid input[type="text"],
+.contact-grid input[type="email"],
+.contact-grid textarea {
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.contact-grid button {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-grid button:hover,
+.contact-grid button:focus-visible {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+.adventures h2,
+.employees h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.history img,
+.adventures img,
+.employees img {
+    width: 100%;
+    height: auto;
+}
+
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
 }
